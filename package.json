@@ -4,7 +4,8 @@
   "description": "Multiplayer Chess",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "server": "npx --no-install babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/vanessadorbs/chess/issues"
   },
-  "homepage": "https://github.com/vanessadorbs/chess#readme"
+  "homepage": "https://github.com/vanessadorbs/chess#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/node": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55"
+  }
 }
