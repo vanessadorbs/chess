@@ -1,0 +1,19 @@
+{
+  "name": "chess",
+  "version": "0.0.0",
+  "description": "Multiplayer Chess",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessadorbs/chess.git"
+  },
+  "author": "Vanessa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanessadorbs/chess/issues"
+  },
+  "homepage": "https://github.com/vanessadorbs/chess#readme"
+}
