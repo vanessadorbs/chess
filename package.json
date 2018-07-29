@@ -4,11 +4,18 @@
   "description": "Multiplayer Chess",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "npx --no-install jest",
     "server": "npx --no-install babel-node src/server/server.js",
     "build": "npx --no-install webpack --mode=production",
     "start": "npx --no-install webpack-dev-server --mode=development",
     "reinstall": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "verbose": true,
+    "testURL": "http://localhost/"
   },
   "repository": {
     "type": "git",
@@ -24,14 +31,17 @@
     "@babel/core": "^7.0.0-beta.55",
     "@babel/node": "^7.0.0-beta.55",
     "@babel/preset-env": "^7.0.0-beta.55",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.0-beta.4",
     "eslint": "^5.2.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.2",
     "webpack": "^4.16.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
